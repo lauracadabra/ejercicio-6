@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/nav.css">
+</head>
+<body>
+    <header class="cd-auto-hide-header">
+        <div class="logo"><a href="#0"><img src="images/cd-logo.png" alt="Logo"></a></div>
+    
+        <nav class="cd-primary-nav">
+            <a href="#cd-navigation" class="nav-trigger">
+                <span>
+                    <em aria-hidden="true"></em>
+                    Menu
+                </span>
+            </a> <!-- .nav-trigger -->
+    
+            <ul id="cd-navigation">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="videos.html">Video</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+              <li><a href="#0">Contacto</a></li>
+              <li><a href="#0">Sobre Nosotros</a></li>
+          </ul>
+
+        </nav> <!-- .cd-primary-nav -->
+    </header> <!-- .cd-auto-hide-header -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/arriety.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/arriety1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/chihiro.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/howls_moving_castle.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Howl_Sophie.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/kiki.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/marnie.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/ponyo.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/princesa_mononoke.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+      <script>
+          if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+      </script>
+      <script src="js/main.js"></script>
+</body>
+</html>

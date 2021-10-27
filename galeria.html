@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/lightbox.css">
+</head>
+<body>
+    <header class="cd-auto-hide-header">
+        <div class="logo"><a href="#0"><img src="images/cd-logo.png" alt="Logo"></a></div>
+    
+        <nav class="cd-primary-nav">
+            <a href="#cd-navigation" class="nav-trigger">
+                <span>
+                    <em aria-hidden="true"></em>
+                    Menu
+                </span>
+            </a> <!-- .nav-trigger -->
+    
+            <ul id="cd-navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="videos.html">Video</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#0">Contacto</a></li>
+                <li><a href="#0">Sobre Nosotros</a></li>
+            </ul>
+        </nav> <!-- .cd-primary-nav -->
+    </header> <!-- .cd-auto-hide-header -->
+    
+<!--galeria-->
+<div class="galeria">
+    
+    <div class="item">
+    <a href="images/arriety.jpg" data-lightbox="roadtrip"><img src="images/arriety.jpg" alt="Arriety"></a>
+    </div>
+
+    <div class="item">
+    <a href="images/chihiro.jpg" data-lightbox="roadtrip"><img src="images/chihiro.jpg" alt="Chihiro"></a>
+    </div>  
+    
+    <div class="item">
+    <a href="images/howls_moving_castle.jpg" data-lightbox="roadtrip"><img src="images/howls_moving_castle.jpg" alt="Calcifer"></a>
+    </div>
+
+</div>
+<!--fin galeria-->
+
+   
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+      <script>
+          if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+      </script>
+      <script src="js/main.js"></script>
+      
+      <!--Javascript-->
+      <script src="js/lightbox.js"></script>
+</body>
+</html>
+
