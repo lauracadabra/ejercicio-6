@@ -17,26 +17,38 @@ height: 100%;
 }
 
 body {
-background: #eee;
-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-font-size: 14px;
-color: #000;
-margin: 0;
-padding: 0;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    padding-top: 110px;
+}
+
+header{
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
 }
 
 .swiper {
 width: 100%;
-padding-top: 50px;
-padding-bottom: 50px;
-margin-top: 100px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 
 .swiper-slide {
 background-position: center;
 background-size: cover;
-width: 300px;
-height: 160px;
+width: 80%;
+max-width: 400px;
+height: fit-content;
+}
+.swiper-wrapper{
+    align-items: center;
 }
 
 .swiper-slide img {
@@ -44,20 +56,92 @@ display: block;
 width: 100%;
 }
 
-.item {
-    flex: 0 32%;
-    height: 100px;
-    margin-bottom: 2%; /* (100-32*3)/2 */
+.swiper-slide h3{
+    margin-top: 10px;
 }
+
+.swiper-slide span{
+    display: block;
+    margin-top: 10px;
+}
+
 
 .galeria {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 8em;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0 ;
+}
+.item {
+    max-width: 300px;
+    margin: 1rem;
 }
 
 .logo{
-    width: 2%;
-    height: 2%;
+    width: 30%;
+    max-width: 100px;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video iframe{
+    width: 100%;    
+}
+
+iframe{
+    margin: 1rem;
+}
+
+.sobre-nosotros{
+    width: 80%;
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.sobre-nosotros p{
+    margin: 2rem 0;
+}
+
+footer{
+    margin-top: 2rem;
+    padding: 3rem 1rem;
+    background-color: #fff;
+}
+
+footer h2{
+    color: #25283D;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .footer-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+footer .footer-container a{
+    text-decoration: none;
+
+}
+footer .footer-container a img{
+    width: 30px;
+    margin: 1rem;
+}
+
+@media screen and (min-width:1024px) {
+    .videos{
+        flex-direction: row;
+        justify-content: center;
+        height: 70vh;
+    }
+    .galeria{
+        height: 50vh;
+    }
 }
